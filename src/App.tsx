@@ -152,6 +152,54 @@ function TourDeTable() {
   );
 }
 
+function InstagramVsGoogle() {
+  return (
+    <section className="bg-brand-dark text-white py-20 relative overflow-hidden">
+      <div className="absolute rounded-full z-0 pointer-events-none w-[600px] h-[600px] -top-[200px] -right-[200px] bg-[radial-gradient(circle,rgba(250,204,21,0.15)_0%,rgba(11,17,33,0)_70%)]"></div>
+      <div className="max-w-6xl mx-auto px-6 relative z-10">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-yellow-400 text-brand-dark">
+            LE DÉCLIC
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-4">Le grand piège :<br />Réseaux Sociaux vs Google</h2>
+          <p className="text-lg md:text-xl text-slate-300 max-w-3xl mx-auto">Beaucoup d'indépendants s'épuisent à poster tous les jours sur Instagram ou Facebook pour 0 client. Comprendre cette différence va vous faire gagner un temps fou.</p>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-stretch">
+          {/* Les Réseaux Sociaux */}
+          <div className="bg-red-500/5 border border-red-500/30 rounded-2xl p-10 flex flex-col">
+            <h3 className="text-2xl font-extrabold text-red-400 mb-4">📱 Instagram / Facebook</h3>
+            <p className="text-red-400 font-bold text-lg mb-4">= Le marketing de l'interruption</p>
+            <p className="text-white/80 mb-6">Les gens sont là pour se détendre, regarder des vidéos de chats ou les vacances de leurs amis. Vous venez interrompre leur divertissement avec vos services.</p>
+            <ul className="flex flex-col gap-3 mt-auto text-base">
+              <li className="flex items-start gap-3"><span className="text-red-500">❌</span> <span>Il faut créer du contenu tout le temps.</span></li>
+              <li className="flex items-start gap-3"><span className="text-red-500">❌</span> <span>Durée de vie d'un post : 24 heures.</span></li>
+              <li className="flex items-start gap-3"><span className="text-red-500">❌</span> <span>Les gens ne sont pas prêts à acheter.</span></li>
+            </ul>
+          </div>
+
+          {/* Google */}
+          <div className="bg-emerald-500/5 border border-emerald-500/30 rounded-2xl p-10 flex flex-col">
+            <h3 className="text-2xl font-extrabold text-emerald-300 mb-4">🔍 Google (Votre Site)</h3>
+            <p className="text-emerald-400 font-bold text-lg mb-4">= Le marketing de l'intention</p>
+            <p className="text-white/80 mb-6">Quand une personne tape "Créatrice de bijoux", "Assureur" ou "Ménage à domicile" sur Google, elle a un problème MAINTENANT et sa carte bleue est presque déjà sortie.</p>
+            <ul className="flex flex-col gap-3 mt-auto text-base">
+              <li className="flex items-start gap-3"><span className="text-emerald-500">✓</span> <span>L'intention d'achat est maximale.</span></li>
+              <li className="flex items-start gap-3"><span className="text-emerald-500">✓</span> <span>Un bon site travaille pour vous 24h/24.</span></li>
+              <li className="flex items-start gap-3"><span className="text-emerald-500">✓</span> <span>Un article écrit aujourd'hui peut vous ramener des clients pendant 3 ans.</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="bg-yellow-400/5 border-2 border-dashed border-yellow-400/50 rounded-2xl p-8 text-center mt-12">
+          <h3 className="text-xl font-extrabold text-yellow-400 mb-2">🤔 Réflexion collective</h3>
+          <p className="text-lg text-white/90 mb-0">Levez la main : qui ici passe plus de 2 heures par semaine sur Instagram/Facebook pour son activité ? Et combien de vrais clients réguliers cela vous rapporte-t-il vraiment ?</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Programme() {
   return (
     <section className="bg-slate-50 py-20">
@@ -318,7 +366,7 @@ function StrategieSEO() {
   );
 }
 
-function Levier4() {
+function Regle3Secondes() {
   return (
     <section className="py-20 bg-white">
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-start">
@@ -326,41 +374,45 @@ function Levier4() {
           <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-red-500/10 text-red-500">
             LEVIER 4
           </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">La fondation :<br />Un Site "Machine à clients"</h2>
-          <p className="text-slate-600 mb-6 text-lg">Beaucoup d'indépendants ont ce que j'appelle un "Site Vitrine" (carte de visite). C'est comme avoir une magnifique boutique... au fond d'une impasse sombre. Personne ne la voit.</p>
-          <p className="text-slate-600 mb-8 text-lg">Il faut un <strong className="text-slate-900">Site Optimisé</strong>, pensé pour plaire à Google ET à vos clients dès le premier jour.</p>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">L'épreuve de vérité :<br />La règle des 3 secondes</h2>
+          <p className="text-slate-600 mb-6 text-lg">Avoir des visites sur votre site, c'est bien. Mais sur internet, le client est impatient. S'il arrive sur votre site, il vous juge en <strong className="text-slate-900">exactement 3 secondes</strong>.</p>
+          <p className="text-slate-600 mb-6 text-lg">S'il y a trop de texte, si c'est mal affiché sur son téléphone, ou s'il ne comprend pas immédiatement ce que vous vendez : <span className="text-red-500 font-bold">il ferme la page et part chez votre concurrent.</span></p>
 
           <div className="bg-red-500/5 border border-red-100 rounded-2xl p-6 border-l-4 border-l-red-500 mb-6">
-            <h3 className="text-lg font-bold text-red-700 mb-3">🛠️ L'expertise Triva Media</h3>
-            <p className="text-slate-800 mb-0">Un assureur a besoin d'un site qui respire la <strong className="text-slate-900">confiance</strong>. Une créatrice de bijoux ou de tableaux a besoin d'un site <strong className="text-slate-900">ultra-visuel</strong> qui s'affiche instantanément. C'est ici que j'interviens. Mon métier est de vous décharger de la technique en concevant des sites web sur-mesure, rapides, et dont la structure "parle" parfaitement à Google.</p>
+            <h3 className="text-xl font-bold text-red-700 mb-3">🛠️ Pourquoi Triva Media ?</h3>
+            <p className="text-slate-800 mb-0 text-lg">Un site fait "soi-même" sur Wix fait souvent amateur et ne rassure pas. Mon métier, c'est de concevoir des sites web au design premium, qui s'affichent instantanément, et qui crient "<strong className="text-slate-900">Faites-moi confiance, je suis un professionnel !</strong>" dès la première seconde.</p>
           </div>
         </div>
 
         <div className="flex flex-col gap-8">
-          <div className="bg-red-500/5 border-2 border-dashed border-red-500 rounded-2xl p-6 md:p-8 relative">
-            <div className="bg-red-500 text-white px-3 py-1.5 rounded-full text-xs font-extrabold tracking-widest inline-flex items-center gap-2 mb-4 animate-pulse-red">
-              <span className="text-[10px]">🔴</span> AUDIT EXPRESS
-            </div>
-            <h3 className="text-xl font-extrabold text-red-700 mb-2">Votre site est-il un frein ?</h3>
-            <p className="text-red-800 mb-0">Qui a un site web ? Donnez-moi l'adresse. Je vais l'ouvrir sur mon téléphone et vous dire en 30 secondes s'il aide ou s'il bloque votre référencement actuel.</p>
-          </div>
-
-          <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
-            <h3 className="text-xl font-extrabold text-slate-900 mb-6">Ce que Google exige de votre site :</h3>
-            <ul className="flex flex-col gap-5">
-              <li className="flex items-start gap-4 font-medium text-lg text-slate-700">
-                <span className="text-2xl leading-none mt-1">📱</span>
-                <span><strong className="text-slate-900">100% Mobile :</strong> L'affichage doit être parfait sur téléphone (60% du trafic).</span>
+          <div className="bg-brand-dark text-white rounded-2xl p-10">
+            <h3 className="text-2xl font-extrabold text-yellow-400 mb-6">Ce qui doit être visible en 3 secondes :</h3>
+            <ul className="flex flex-col gap-4">
+              <li className="flex items-start gap-4 text-lg">
+                <span className="text-2xl leading-none">🎯</span>
+                <span><strong className="text-white">Une promesse claire :</strong> "Je fais X pour Y à [Ville]".</span>
               </li>
-              <li className="flex items-start gap-4 font-medium text-lg text-slate-700">
-                <span className="text-2xl leading-none mt-1">⚡</span>
-                <span><strong className="text-slate-900">Vitesse :</strong> Un site qui met plus de 3 secondes à charger = la moitié des clients perdus.</span>
+              <li className="flex items-start gap-4 text-lg">
+                <span className="text-2xl leading-none">🤝</span>
+                <span><strong className="text-white">De la réassurance :</strong> "Plus de 100 clients satisfaits", ou "Agréé État".</span>
               </li>
-              <li className="flex items-start gap-4 font-medium text-lg text-slate-700">
-                <span className="text-2xl leading-none mt-1">📑</span>
-                <span><strong className="text-slate-900">Structure (H1/H2) :</strong> Des titres clairs pour que le robot Google lise votre page facilement.</span>
+              <li className="flex items-start gap-4 text-lg">
+                <span className="text-2xl leading-none">👆</span>
+                <span><strong className="text-white">Un bouton d'action évident :</strong> On ne doit pas chercher comment vous contacter.</span>
+              </li>
+              <li className="flex items-start gap-4 text-lg">
+                <span className="text-2xl leading-none">✉️</span>
+                <span><strong className="text-white">Une adresse pro :</strong> "contact@mon-entreprise.com" (et pas un @gmail.com qui fait amateur).</span>
               </li>
             </ul>
+          </div>
+
+          <div className="bg-red-500/5 border-2 border-dashed border-red-500 rounded-2xl p-8 relative">
+            <div className="bg-red-500 text-white px-3 py-1.5 rounded-full text-xs font-extrabold tracking-widest inline-flex items-center gap-2 mb-4 animate-pulse-red">
+              <span className="text-[10px]">🔴</span> LE TEST DU SMARTPHONE
+            </div>
+            <h3 className="text-xl font-extrabold text-red-700 mb-2">Passez-vous le test ?</h3>
+            <p className="text-red-800 mb-0 text-lg">Ouvrez votre propre site sur votre téléphone. Soyez honnête : est-ce que ça fait "Wahou", ou est-ce que ça fait "Bricolage" ? Sur internet, un cerveau confus dit toujours "Non".</p>
           </div>
         </div>
       </div>
@@ -610,11 +662,12 @@ export default function App() {
       <Hero />
       <IdeesRecues />
       <TourDeTable />
+      <InstagramVsGoogle />
       <Programme />
       <Levier1 />
       <ModeExpert />
       <StrategieSEO />
-      <Levier4 />
+      <Regle3Secondes />
       <ConversionDesign />
       <Levier3 />
       <Levier5 />
