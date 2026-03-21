@@ -1194,11 +1194,69 @@ function AuditSiteDirect() {
   );
 }
 
+function Sommaire() {
+  return (
+    <section className="py-20 bg-slate-50 border-b border-slate-200">
+      <div className="max-w-4xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-blue-600/10 text-brand-primary">
+            AU PROGRAMME
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Ce que nous allons voir aujourd'hui</h2>
+        </div>
+        
+        <div className="grid gap-6">
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-6 hover:shadow-md transition-shadow">
+            <div className="text-4xl shrink-0">👋</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-1">1. Introduction</h3>
+              <p className="text-slate-600">Tour de table, idées reçues et la différence entre Réseaux Sociaux et Google.</p>
+            </div>
+          </div>
+          
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-6 hover:shadow-md transition-shadow">
+            <div className="text-4xl shrink-0">🎯</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-1">2. Les bases du SEO Local</h3>
+              <p className="text-slate-600">Comprendre ce que veut Google et comment se positionner dans sa ville.</p>
+            </div>
+          </div>
+          
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-6 hover:shadow-md transition-shadow">
+            <div className="text-4xl shrink-0">🚀</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-1">3. Le Plan d'Action (5 Leviers)</h3>
+              <p className="text-slate-600">Fiche Google, Contenu IA, Avis clients, Mobile-First et Conversion.</p>
+            </div>
+          </div>
+          
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-6 hover:shadow-md transition-shadow">
+            <div className="text-4xl shrink-0">🛠️</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-1">4. Ateliers Pratiques & Audits</h3>
+              <p className="text-slate-600">Trouver vos mots-clés et analyser vos sites en direct tous ensemble.</p>
+            </div>
+          </div>
+          
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 flex items-center gap-6 hover:shadow-md transition-shadow">
+            <div className="text-4xl shrink-0">❓</div>
+            <div>
+              <h3 className="text-xl font-bold text-slate-900 mb-1">5. Questions & Réponses</h3>
+              <p className="text-slate-600">Un temps d'échange pour répondre à toutes vos interrogations.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
       <ProgressBar />
       <Hero />
+      <Sommaire />
       <TourDeTable />
       <InstagramVsGoogle />
       <IdeesRecues />
