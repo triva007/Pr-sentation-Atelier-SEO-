@@ -139,33 +139,33 @@ function IdeesRecues() {
 
 function TourDeTable() {
   return (
-    <section className="py-20 bg-white">
+    <section className="py-20 bg-slate-50 border-y border-slate-200">
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto mb-12">
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
-            La question à un million :
-          </h2>
-          <p className="text-lg text-slate-600 mb-4">Quand vous avez cherché votre activité tout à l'heure, étiez-vous satisfaits de la position de votre entreprise dans les résultats ?</p>
-          <p className="text-lg text-slate-600">C'est exactement ce que nous allons corriger ensemble.</p>
-        </div>
-
-        <div className="bg-gradient-to-br from-brand-dark to-brand-dark-card rounded-2xl p-8 md:p-12 text-white border border-slate-800">
-          <div className="text-center mb-8">
-            <h3 className="text-2xl font-extrabold text-yellow-400">Faisons connaissance (Tour de table)</h3>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-brand-primary/10 text-brand-primary">
+            FAISONS CONNAISSANCE
           </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-            <div className="bg-white/5 rounded-2xl p-6 text-center">
-              <div className="text-4xl mb-4">👋</div>
-              <h4 className="text-lg font-bold">Votre prénom & activité</h4>
-            </div>
-            <div className="bg-white/5 rounded-2xl p-6 text-center">
-              <div className="text-4xl mb-4">🔍</div>
-              <h4 className="text-lg font-bold">Avez-vous un site web ?</h4>
-            </div>
-            <div className="bg-white/5 rounded-2xl p-6 text-center">
-              <div className="text-4xl mb-4">🎯</div>
-              <h4 className="text-lg font-bold">Votre objectif ce soir</h4>
-            </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">
+            Tour de table (2 min / personne)
+          </h2>
+          <p className="text-lg text-slate-600 mb-8">Puisque nous sommes en petit comité, profitons-en pour personnaliser cet atelier. Présentez-vous rapidement :</p>
+        </div>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-4xl mx-auto">
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+            <div className="text-4xl mb-4">👋</div>
+            <h3 className="font-bold text-slate-900 mb-2">1. Qui êtes-vous ?</h3>
+            <p className="text-slate-500 text-sm">Votre prénom et votre activité principale.</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+            <div className="text-4xl mb-4">🧲</div>
+            <h3 className="font-bold text-slate-900 mb-2">2. Vos clients ?</h3>
+            <p className="text-slate-500 text-sm">Comment trouvez-vous vos clients aujourd'hui ? (Bouche-à-oreille, Instagram, flyers...)</p>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-slate-200 text-center">
+            <div className="text-4xl mb-4">🎯</div>
+            <h3 className="font-bold text-slate-900 mb-2">3. Votre objectif ?</h3>
+            <p className="text-slate-500 text-sm">Qu'attendez-vous de cet atelier ce soir ?</p>
           </div>
         </div>
       </div>
@@ -1121,6 +1121,79 @@ function Footer() {
   );
 }
 
+function AtelierMotsCles() {
+  return (
+    <section className="py-20 bg-brand-primary text-white relative overflow-hidden">
+      <div className="absolute rounded-full z-0 pointer-events-none w-[400px] h-[400px] -bottom-[100px] -left-[100px] bg-[radial-gradient(circle,rgba(255,255,255,0.15)_0%,rgba(255,255,255,0)_70%)]"></div>
+      <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
+        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-white/20 text-white border border-white/30">
+          ATELIER PRATIQUE
+        </div>
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-6">Trouvons votre "Mot-Clé en Or" 🥇</h2>
+        <p className="text-xl text-white/90 max-w-2xl mx-auto mb-12">
+          Ouvrez l'application Notes de votre téléphone. Nous allons définir ensemble la requête exacte que votre client idéal tape sur Google.
+        </p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left max-w-4xl mx-auto">
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20">
+            <h3 className="text-2xl font-bold mb-4 text-yellow-400">Étape 1 : L'intention</h3>
+            <p className="mb-4">Ne choisissez pas un mot trop vague. Choisissez un mot qui prouve que la personne veut acheter.</p>
+            <ul className="space-y-2 text-white/80">
+              <li>❌ "Mal de dos" (Cherche juste une info)</li>
+              <li>✅ "Ostéopathe urgence Paris 15" (Veut un RDV maintenant)</li>
+            </ul>
+          </div>
+          <div className="bg-white/10 backdrop-blur-sm p-8 rounded-3xl border border-white/20">
+            <h3 className="text-2xl font-bold mb-4 text-yellow-400">Étape 2 : À vous de jouer</h3>
+            <p className="mb-4">Tapez 3 mots-clés dans vos notes. Je vais passer vous voir un par un pour valider votre choix.</p>
+            <div className="bg-black/20 p-4 rounded-xl font-mono text-sm">
+              [Votre Métier] + [Votre Spécialité] + [Votre Ville/Quartier]
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function AuditSiteDirect() {
+  return (
+    <section className="py-20 bg-slate-900 text-white">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="bg-gradient-to-r from-red-600 to-red-800 rounded-3xl p-8 md:p-12 shadow-2xl relative overflow-hidden">
+          <div className="absolute top-0 right-0 text-9xl opacity-10 transform translate-x-8 -translate-y-8">
+            📱
+          </div>
+          <div className="relative z-10 md:w-2/3">
+            <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-white/20 text-white">
+              SÉQUENCE VÉRITÉ
+            </div>
+            <h2 className="text-3xl md:text-5xl font-extrabold mb-6">Audit de vos sites en direct</h2>
+            <p className="text-xl text-white/90 mb-8">
+              La théorie c'est bien, la pratique c'est mieux. Nous allons prendre le temps de regarder les sites de chacun d'entre vous. <strong className="text-white">Ouvrez-les tous sur votre téléphone</strong> et analysons-les ensemble :
+            </p>
+            <ul className="space-y-4 mb-8">
+              <li className="flex items-center gap-3">
+                <span className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center font-bold">1</span>
+                <span>Passe-t-il le test des 3 secondes ?</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center font-bold">2</span>
+                <span>Est-il vraiment lisible sur votre écran mobile ?</span>
+              </li>
+              <li className="flex items-center gap-3">
+                <span className="bg-white/20 w-8 h-8 rounded-full flex items-center justify-center font-bold">3</span>
+                <span>L'appel à l'action est-il clair ?</span>
+              </li>
+            </ul>
+            <p className="text-yellow-400 font-bold italic">Promis, on sera bienveillants !</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
@@ -1140,6 +1213,7 @@ export default function App() {
       <LongueTraine />
       <SyndromeRestaurant />
       <ContenuRoi />
+      <AtelierMotsCles />
       <Backlinks />
       <Levier3 />
       <GestionMauvaisAvis />
@@ -1148,6 +1222,7 @@ export default function App() {
       <ConversionDesign />
       <Levier5 />
       <CasConcret />
+      <AuditSiteDirect />
       <QuestionsReponses />
       <Conclusion />
       <Footer />
