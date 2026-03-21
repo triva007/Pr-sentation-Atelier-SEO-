@@ -57,22 +57,24 @@ function Hero() {
         <div className="bg-brand-dark-card border border-blue-600/30 rounded-2xl p-8 text-white relative">
           <div className="absolute top-0 left-0 w-full h-1.5 bg-brand-primary rounded-t-2xl"></div>
           <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-white/10 text-white border border-white/20">
-            VOTRE INTERVENANT
+            LE CONSTAT
           </div>
-          <h3 className="text-3xl font-extrabold mb-2">Aaron Boukaia</h3>
-          <p className="text-brand-primary font-bold mb-6">Fondateur de Triva Media</p>
-          <p className="text-slate-300 mb-6">
-            Mon métier ? Créer des sites web sur-mesure et optimiser la visibilité locale des indépendants pour qu'ils deviennent incontournables sur leur secteur.
-          </p>
-
-          <div className="grid grid-cols-2 gap-4 pt-6 border-t border-white/10">
-            <div>
-              <div className="text-2xl font-black text-yellow-400">17 ans</div>
-              <p className="text-xs text-slate-400 mt-1">Entrepreneur depuis mes 13 ans</p>
+          <h3 className="text-3xl font-extrabold mb-6">Le plafond de verre du "Bouche-à-Oreille"</h3>
+          
+          <div className="space-y-6">
+            <div className="flex gap-4 items-start">
+              <div className="text-red-400 text-2xl mt-1">⚠️</div>
+              <div>
+                <h4 className="text-xl font-bold text-white mb-1">C'est imprévisible</h4>
+                <p className="text-slate-300 text-base">Vous ne pouvez pas contrôler quand un client va vous recommander. C'est le stress des mois "creux" et la difficulté de se projeter.</p>
+              </div>
             </div>
-            <div>
-              <div className="text-2xl font-black text-brand-primary">3 ans</div>
-              <p className="text-xs text-slate-400 mt-1">D'expertise SEO terrain</p>
+            <div className="flex gap-4 items-start">
+              <div className="text-emerald-400 text-2xl mt-1">💡</div>
+              <div>
+                <h4 className="text-xl font-bold text-white mb-1">La solution Google</h4>
+                <p className="text-slate-300 text-base">Être visible sur Google, c'est créer un apport de clients régulier et prédictible. Vous êtes trouvé par des gens qui ont besoin de vous <strong className="text-white">aujourd'hui</strong>.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -156,6 +158,83 @@ function TourDeTable() {
               <h4 className="text-lg font-bold">Votre objectif ce soir</h4>
             </div>
           </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function DefinitionSEO() {
+  return (
+    <section className="bg-white py-20">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-blue-600/10 text-brand-primary">
+            LES BASES
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">C'est quoi le <span className="text-brand-primary">SEO</span> ?</h2>
+          <p className="text-lg text-slate-600 mb-6">SEO signifie <strong>Search Engine Optimization</strong> (Optimisation pour les moteurs de recherche). C'est l'art d'aider Google à comprendre ce que vous faites pour qu'il vous présente en priorité à vos futurs clients.</p>
+          
+          <div className="bg-slate-50 border-l-4 border-brand-primary p-6 rounded-r-xl mt-8">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">📚 La métaphore de la bibliothèque</h3>
+            <p className="text-slate-600 mb-0">Imaginez que Google est la plus grande bibliothèque du monde. Votre site web est un livre. Si votre livre n'a pas de titre clair, pas de résumé, et qu'il est rangé au sous-sol... personne ne le lira jamais. Le SEO, c'est mettre votre livre en vitrine avec une belle couverture pour que tout le monde le voie.</p>
+          </div>
+        </div>
+        <div className="bg-brand-dark rounded-2xl p-10 text-white relative overflow-hidden shadow-xl">
+          <div className="absolute top-0 right-0 w-64 h-64 bg-brand-primary/20 rounded-full blur-3xl -mr-20 -mt-20 pointer-events-none"></div>
+          <h3 className="text-2xl font-extrabold mb-8 relative z-10">Le vocabulaire à retenir :</h3>
+          <ul className="flex flex-col gap-8 relative z-10">
+            <li>
+              <strong className="text-yellow-400 text-xl block mb-2">1. Requête (ou Mot-clé)</strong>
+              <span className="text-slate-300 text-base">Ce que l'internaute tape dans la barre de recherche (ex: "Plombier urgence Paris").</span>
+            </li>
+            <li>
+              <strong className="text-yellow-400 text-xl block mb-2">2. Trafic Organique</strong>
+              <span className="text-slate-300 text-base">Les visiteurs qui arrivent sur votre site naturellement, sans que vous ayez payé de publicité. C'est 100% gratuit.</span>
+            </li>
+            <li>
+              <strong className="text-yellow-400 text-xl block mb-2">3. Positionnement (Ranking)</strong>
+              <span className="text-slate-300 text-base">Votre place dans les résultats. Le but ultime ? Être dans les 3 premiers (le podium), car ils captent 75% des clics.</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function CeQueVeutGoogle() {
+  return (
+    <section className="bg-slate-50 py-20">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-emerald-500/10 text-emerald-600">
+          L'OBJECTIF DE GOOGLE
+        </div>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Que veut <span className="text-emerald-500">Google</span> ?</h2>
+        <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-16">Beaucoup pensent que Google est un robot méchant qu'il faut piéger. C'est faux. Google est une entreprise qui a un seul et unique but : <strong className="text-slate-900">satisfaire ses utilisateurs pour qu'ils reviennent.</strong></p>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 text-left">
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+            <div className="text-4xl mb-4">🎯</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">1. La Pertinence</h3>
+            <p className="text-slate-600">Si je cherche une "Pizzeria", je ne veux pas voir un kebab. Google veut proposer le résultat qui répond EXACTEMENT à la demande de l'internaute.</p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+            <div className="text-4xl mb-4">🤝</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">2. La Confiance</h3>
+            <p className="text-slate-600">Google ne veut pas envoyer ses utilisateurs chez un escroc. Il cherche des preuves que vous êtes fiable (Avis clients, ancienneté, mentions légales).</p>
+          </div>
+          <div className="bg-white rounded-2xl p-8 shadow-sm border border-slate-200 hover:shadow-md transition-shadow">
+            <div className="text-4xl mb-4">⚡</div>
+            <h3 className="text-xl font-bold text-slate-900 mb-3">3. L'Expérience</h3>
+            <p className="text-slate-600">Si votre site met 10 secondes à charger ou est illisible sur téléphone, l'utilisateur partira. Google le sait, et vous pénalisera pour ça.</p>
+          </div>
+        </div>
+
+        <div className="mt-12 bg-brand-dark text-white rounded-2xl p-8 max-w-4xl mx-auto shadow-xl">
+          <p className="text-xl font-medium mb-0">
+            <span className="text-yellow-400 font-bold">Le secret :</span> Ne créez pas un site "pour plaire à Google". Créez le meilleur site possible pour vos clients, et Google vous récompensera naturellement.
+          </p>
         </div>
       </div>
     </section>
@@ -304,6 +383,10 @@ function Levier1() {
               <span className="text-emerald-500 text-2xl leading-none mt-1">✓</span>
               <span><strong className="text-slate-900">Une description orientée client :</strong> Utilisez les mots de vos clients (ex: "Appareils de soins anti-âge" et pas "Technologie dermique avancée").</span>
             </li>
+            <li className="flex items-start gap-4 font-medium text-lg text-slate-700">
+              <span className="text-emerald-500 text-2xl leading-none mt-1">✓</span>
+              <span><strong className="text-slate-900">Les Avis Google :</strong> C'est le nerf de la guerre. La quantité, la note moyenne, mais surtout <strong className="text-brand-primary">vos réponses</strong> aux avis montrent que vous êtes actif et soucieux de vos clients.</span>
+            </li>
           </ul>
         </div>
       </div>
@@ -347,6 +430,35 @@ function ModeExpert() {
   );
 }
 
+function ErreurFicheAbandonnee() {
+  return (
+    <section className="bg-white py-20">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="bg-red-500/5 border-2 border-dashed border-red-500 rounded-2xl p-10 relative">
+          <div className="absolute -top-4 -left-4 text-6xl">🏚️</div>
+          <h3 className="text-2xl font-extrabold text-red-700 mb-4">L'erreur de 90% des indépendants</h3>
+          <p className="text-lg text-slate-800 mb-0">Créer sa fiche Google ou son site... et ne plus jamais y toucher pendant 2 ans.</p>
+        </div>
+        <div>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-blue-600/10 text-brand-primary">
+            L'ALGORITHME
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Google est (presque) humain.</h2>
+          <p className="text-slate-600 mb-6 text-lg">Il n'a aucune envie d'envoyer ses utilisateurs vers un magasin qui a l'air fermé ou abandonné. S'il voit que rien ne bouge, il vous déclasse.</p>
+          <div className="bg-emerald-500/10 border-l-4 border-emerald-500 p-6 rounded-r-xl">
+            <h4 className="text-lg font-bold text-emerald-700 mb-2">Le remède miracle (5 min/mois) :</h4>
+            <ul className="flex flex-col gap-2 text-slate-700 font-medium">
+              <li>✓ Mettre à jour ses horaires (surtout jours fériés)</li>
+              <li>✓ Ajouter UNE nouvelle photo par mois</li>
+              <li>✓ Répondre aux nouveaux avis</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function StrategieSEO() {
   return (
     <section className="bg-slate-50 py-20">
@@ -376,6 +488,41 @@ function StrategieSEO() {
   );
 }
 
+function SyndromeRestaurant() {
+  return (
+    <section className="bg-brand-dark text-white py-20 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-yellow-400 text-brand-dark">
+            STRUCTURE DU SITE
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold mb-6">Le syndrome du<br /><span className="text-yellow-400">"Restaurant à 50 plats"</span></h2>
+        </div>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-stretch">
+          <div className="bg-slate-800 border border-white/10 rounded-2xl p-8 flex flex-col">
+            <div className="text-4xl mb-4">🍕🍣🌮🥘</div>
+            <h3 className="text-xl font-extrabold text-white mb-4">Le Concept</h3>
+            <p className="text-slate-300 text-lg mb-0">Si vous allez dans un restaurant et que la carte propose des sushis, des pizzas, de la choucroute et des tacos... est-ce que ça vous donne confiance sur la qualité ? <strong className="text-red-400">La réponse est non.</strong></p>
+          </div>
+
+          <div className="bg-brand-primary/20 border border-brand-primary/50 rounded-2xl p-8 flex flex-col">
+            <div className="text-4xl mb-4">🌐</div>
+            <h3 className="text-xl font-extrabold text-white mb-4">L'Application SEO</h3>
+            <p className="text-slate-300 text-lg mb-4">Sur internet, c'est pareil. L'erreur fatale est d'avoir une seule page "Mes Services" avec une liste à puces "fourre-tout".</p>
+            <p className="text-white font-bold text-lg mb-0">Google déteste les pages fourre-tout. Il ne positionne que les experts d'un sujet précis.</p>
+          </div>
+        </div>
+
+        <div className="bg-white text-brand-dark rounded-2xl p-8 mt-12 text-center max-w-3xl mx-auto shadow-xl">
+          <h3 className="text-2xl font-black mb-4">Le Déclic</h3>
+          <p className="text-xl font-medium text-slate-700 mb-0">"Pour que Google comprenne ce que je vends, je dois lui donner un menu clair et séparé."<br /><br /><span className="text-brand-primary font-bold">1 Page = 1 Expertise (ex: 1 page "Assurance Auto", 1 page "Assurance Décennale")</span></p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function Regle3Secondes() {
   return (
     <section className="py-20 bg-white">
@@ -389,8 +536,8 @@ function Regle3Secondes() {
           <p className="text-slate-600 mb-6 text-lg">S'il y a trop de texte, si c'est mal affiché sur son téléphone, ou s'il ne comprend pas immédiatement ce que vous vendez : <span className="text-red-500 font-bold">il ferme la page et part chez votre concurrent.</span></p>
 
           <div className="bg-red-500/5 border border-red-100 rounded-2xl p-6 border-l-4 border-l-red-500 mb-6">
-            <h3 className="text-xl font-bold text-red-700 mb-3">🛠️ Pourquoi Triva Media ?</h3>
-            <p className="text-slate-800 mb-0 text-lg">Un site fait "soi-même" sur Wix fait souvent amateur et ne rassure pas. Mon métier, c'est de concevoir des sites web au design premium, qui s'affichent instantanément, et qui crient "<strong className="text-slate-900">Faites-moi confiance, je suis un professionnel !</strong>" dès la première seconde.</p>
+            <h3 className="text-xl font-bold text-red-700 mb-3">🛠️ L'importance du design</h3>
+            <p className="text-slate-800 mb-0 text-lg">Un site fait "soi-même" sur une plateforme gratuite fait souvent amateur et ne rassure pas. Un site conçu de manière professionnelle s'affiche instantanément, et crie "<strong className="text-slate-900">Faites-moi confiance, je suis un expert !</strong>" dès la première seconde.</p>
           </div>
         </div>
 
@@ -441,7 +588,7 @@ function ConversionDesign() {
           </div>
           <h2 className="text-3xl md:text-4xl font-extrabold mb-6">Avoir des visites, c'est bien.<br /><span className="text-brand-primary">Avoir des clients, c'est mieux.</span></h2>
           <p className="text-lg text-slate-300 mb-6">Un site rapide pour Google, c'est une chose. Mais une fois que le client arrive sur votre site, <strong className="text-white">il doit être convaincu en moins de 5 secondes</strong> de rester.</p>
-          <p className="text-lg text-slate-300 mb-6">C'est la différence entre un site gratuit "fait maison" (qui fait fuir l'utilisateur) et <strong className="text-white">un site premium Triva Media</strong> (qui agit comme votre meilleur commercial 24h/24, même quand vous dormez).</p>
+          <p className="text-lg text-slate-300 mb-6">C'est la différence entre un site gratuit "fait maison" (qui fait fuir l'utilisateur) et <strong className="text-white">un site premium bien pensé</strong> (qui agit comme votre meilleur commercial 24h/24, même quand vous dormez).</p>
         </div>
 
         <div className="bg-slate-800 border border-white/10 rounded-2xl overflow-hidden relative">
@@ -512,6 +659,53 @@ function Levier3() {
               <h4 className="text-lg font-bold text-slate-900 mb-1">Le bon format</h4>
               <p className="text-slate-600 text-sm">Envoyez le lien directement par <strong className="text-slate-900">SMS ou WhatsApp</strong>.</p>
             </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function GestionMauvaisAvis() {
+  return (
+    <section className="bg-white py-20 relative overflow-hidden">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-red-500/10 text-red-600 border border-red-500/20">
+            GESTION DE CRISE
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Comment gérer un <span className="text-red-500">mauvais avis</span> ?</h2>
+          <p className="text-lg text-slate-600 mb-6">Ça arrive même aux meilleurs. Un client mécontent, ou pire, un faux avis d'un concurrent. La pire erreur ? L'ignorer ou s'énerver.</p>
+          
+          <div className="bg-slate-50 border-l-4 border-brand-primary p-6 rounded-r-xl mt-8">
+            <h3 className="text-xl font-bold text-slate-900 mb-2">La règle d'or :</h3>
+            <p className="text-lg text-brand-primary font-bold mb-0">Votre réponse n'est pas pour la personne qui a laissé l'avis.</p>
+            <p className="text-slate-600 mt-2">Elle est pour les <strong className="text-slate-900">100 prochains clients</strong> qui vont vous lire. C'est votre chance de montrer votre professionnalisme, votre calme et votre sens du service client.</p>
+          </div>
+        </div>
+
+        <div className="flex flex-col gap-6">
+          <div className="bg-slate-50 rounded-2xl p-6 border border-slate-200">
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-slate-200 rounded-full flex items-center justify-center text-xl">😡</div>
+              <div>
+                <div className="font-bold text-slate-900">Client Mécontent</div>
+                <div className="text-yellow-400 text-xs">⭐ (1/5)</div>
+              </div>
+            </div>
+            <p className="text-slate-600 text-sm italic">"Service catastrophique, personne ne m'a rappelé, à fuir !!!"</p>
+          </div>
+
+          <div className="bg-blue-50 border border-blue-100 rounded-2xl p-6 ml-8 relative">
+            <div className="absolute -left-4 top-1/2 -translate-y-1/2 text-2xl">↪️</div>
+            <div className="flex items-center gap-3 mb-4">
+              <div className="w-10 h-10 bg-brand-primary rounded-full flex items-center justify-center text-xl text-white">🏢</div>
+              <div>
+                <div className="font-bold text-slate-900">Votre Réponse (Parfaite)</div>
+                <div className="text-brand-primary text-xs font-bold">Propriétaire</div>
+              </div>
+            </div>
+            <p className="text-slate-700 text-sm">"Bonjour, nous sommes navrés d'apprendre votre insatisfaction. La qualité de notre suivi est notre priorité. Nous n'arrivons pas à retrouver votre dossier avec ce pseudonyme. Pouvez-vous nous contacter au 01 XX XX XX XX pour que nous puissions résoudre ce problème immédiatement ? Bien cordialement."</p>
           </div>
         </div>
       </div>
@@ -672,14 +866,19 @@ export default function App() {
       <Hero />
       <IdeesRecues />
       <TourDeTable />
+      <DefinitionSEO />
+      <CeQueVeutGoogle />
       <InstagramVsGoogle />
       <Programme />
       <Levier1 />
       <ModeExpert />
+      <ErreurFicheAbandonnee />
       <StrategieSEO />
+      <SyndromeRestaurant />
       <Regle3Secondes />
       <ConversionDesign />
       <Levier3 />
+      <GestionMauvaisAvis />
       <Levier5 />
       <CasConcret />
       <Conclusion />
