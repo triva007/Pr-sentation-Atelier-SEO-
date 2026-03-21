@@ -1,4 +1,29 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
+
+function ProgressBar() {
+  const [scrollProgress, setScrollProgress] = useState(0);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const totalScroll = document.documentElement.scrollTop;
+      const windowHeight = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scroll = totalScroll / windowHeight;
+      setScrollProgress(scroll * 100);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
+  return (
+    <div className="fixed top-0 left-0 w-full h-1.5 z-50 pointer-events-none bg-slate-200/20">
+      <div 
+        className="h-full bg-brand-primary transition-all duration-150 ease-out"
+        style={{ width: `${scrollProgress}%` }}
+      ></div>
+    </div>
+  );
+}
 
 function Hero() {
   return (
@@ -643,6 +668,7 @@ function Footer() {
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
+      <ProgressBar />
       <Hero />
       <IdeesRecues />
       <TourDeTable />
