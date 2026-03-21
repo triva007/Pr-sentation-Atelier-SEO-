@@ -1,23 +1,8 @@
 import React from 'react';
 
-function Header() {
-  return (
-    <header className="fixed top-0 left-0 w-full bg-white/95 backdrop-blur-md border-b border-slate-200 z-50 py-4">
-      <div className="max-w-6xl mx-auto px-6 flex justify-between items-center">
-        <a href="#" className="font-extrabold text-xl flex items-center gap-2 text-brand-dark no-underline">
-          <span className="text-brand-primary">🛡️</span> Triva Media
-        </a>
-        <div className="text-xs font-semibold text-slate-500 text-right">
-          Atelier SEO<br />Sans Pub
-        </div>
-      </div>
-    </header>
-  );
-}
-
 function Hero() {
   return (
-    <section className="bg-brand-dark text-white pt-32 pb-20 min-h-[90vh] relative overflow-hidden flex items-center">
+    <section className="bg-brand-dark text-white py-20 min-h-screen relative overflow-hidden flex items-center">
       <div className="absolute rounded-full z-0 pointer-events-none w-[600px] h-[600px] -top-[200px] -right-[200px] bg-[radial-gradient(circle,rgba(0,82,255,0.2)_0%,rgba(11,17,33,0)_70%)]"></div>
       <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10">
         <div>
@@ -658,7 +643,6 @@ function Footer() {
 export default function App() {
   return (
     <div className="min-h-screen bg-white">
-      <Header />
       <Hero />
       <IdeesRecues />
       <TourDeTable />
