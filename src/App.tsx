@@ -91,10 +91,10 @@ function IdeesRecues() {
           <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-blue-600/10 text-brand-primary">
             RASSUREZ-VOUS
           </div>
-          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">3 idées reçues à oublier ce soir.</h2>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900">4 idées reçues à oublier ce soir.</h2>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
             <p className="line-through text-slate-500 mb-4 font-semibold">
               « Il faut payer des pubs pour être visible sur Google »
@@ -120,6 +120,15 @@ function IdeesRecues() {
             <div className="flex gap-3 items-start">
               <span className="text-emerald-500 text-2xl font-black leading-none">✓</span>
               <h4 className="text-lg font-bold text-slate-900">30 minutes par semaine suffisent si vous faites les bonnes actions.</h4>
+            </div>
+          </div>
+          <div className="bg-white border border-slate-200 rounded-2xl p-8 shadow-sm">
+            <p className="line-through text-slate-500 mb-4 font-semibold">
+              « Le SEO c'est gratuit, donc c'est facile »
+            </p>
+            <div className="flex gap-3 items-start">
+              <span className="text-emerald-500 text-2xl font-black leading-none">✓</span>
+              <h4 className="text-lg font-bold text-slate-900">C'est gratuit en argent, mais ça demande de la méthode et de la régularité.</h4>
             </div>
           </div>
         </div>
@@ -235,6 +244,30 @@ function CeQueVeutGoogle() {
           <p className="text-xl font-medium mb-0">
             <span className="text-yellow-400 font-bold">Le secret :</span> Ne créez pas un site "pour plaire à Google". Créez le meilleur site possible pour vos clients, et Google vous récompensera naturellement.
           </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function SEOLocal() {
+  return (
+    <section className="bg-white py-20">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-emerald-500/10 text-emerald-600">
+          LA BONNE NOUVELLE
+        </div>
+        <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Vous ne jouez pas contre Amazon.</h2>
+        <p className="text-xl text-slate-600 max-w-3xl mx-auto mb-12">Le SEO National (être premier sur "Chaussures") est une guerre de multinationales. Vous, votre terrain de jeu, c'est le <strong>SEO Local</strong>.</p>
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 text-left">
+          <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">🌍 La zone de chalandise</h3>
+            <p className="text-slate-600">Google géolocalise les recherches. Si quelqu'un cherche "Plombier" à Bordeaux, Google ne montrera QUE des plombiers de Bordeaux. Votre seul objectif : être meilleur que les 5 autres plombiers de votre quartier.</p>
+          </div>
+          <div className="bg-slate-50 p-8 rounded-2xl border border-slate-200 shadow-sm">
+            <h3 className="text-2xl font-bold text-slate-900 mb-4">📍 L'intention locale</h3>
+            <p className="text-slate-600">46% des recherches sur Google ont une intention locale. Les gens cherchent "près de chez moi". C'est une audience ultra-qualifiée, prête à se déplacer ou à appeler immédiatement.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -425,6 +458,15 @@ function ModeExpert() {
             <p className="text-slate-300 mb-0">Vous pouvez publier des "Posts" sur Google comme sur Instagram. Partagez une nouvelle création de tableau, une promo sur des cosmétiques, ou une actualité <strong className="text-white">1 fois par semaine</strong>. Cela montre à l'algorithme que vous êtes actif.</p>
           </div>
         </div>
+
+        <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-8 mt-8 flex flex-col md:flex-row items-start gap-6">
+          <div className="text-5xl">🤖</div>
+          <div>
+            <h3 className="text-xl font-bold text-emerald-400 mb-2">L'Astuce ChatGPT (Gain de temps : 2h/mois)</h3>
+            <p className="text-slate-300 mb-3">Ne rédigez plus vos descriptions et vos posts vous-même. Utilisez ce prompt :</p>
+            <code className="block bg-brand-dark p-4 rounded-lg text-emerald-300 text-sm font-mono">"Agis comme un expert en marketing local. Rédige un post Google Business de 100 mots pour annoncer [votre actualité/promo]. Le ton doit être professionnel mais chaleureux, et inciter à contacter le [votre numéro]."</code>
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -488,6 +530,64 @@ function StrategieSEO() {
   );
 }
 
+function LongueTraine() {
+  return (
+    <section className="bg-slate-50 py-20">
+      <div className="max-w-6xl mx-auto px-6">
+        <div className="text-center mb-16">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-blue-600/10 text-brand-primary">
+            STRATÉGIE AVANCÉE
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">La magie de la <span className="text-brand-primary">Longue Traîne</span></h2>
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto">Ne vous battez pas là où tout le monde se bat. Soyez malin.</p>
+        </div>
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-red-100">
+            <div className="text-red-500 font-bold mb-2">Mot-clé Générique</div>
+            <h3 className="text-xl font-black text-slate-900 mb-4">"Avocat"</h3>
+            <ul className="text-slate-600 space-y-2 text-sm">
+              <li>❌ 100 000 recherches/mois</li>
+              <li>❌ Concurrence extrême</li>
+              <li>❌ Intention floue (cherche-t-il un fruit ou un métier ?)</li>
+              <li>❌ Conversion : 0.1%</li>
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-sm border border-orange-100">
+            <div className="text-orange-500 font-bold mb-2">Mot-clé Spécifique</div>
+            <h3 className="text-xl font-black text-slate-900 mb-4">"Avocat divorce"</h3>
+            <ul className="text-slate-600 space-y-2 text-sm">
+              <li>⚠️ 10 000 recherches/mois</li>
+              <li>⚠️ Concurrence forte</li>
+              <li>✅ Intention claire</li>
+              <li>⚠️ Conversion : 1%</li>
+            </ul>
+          </div>
+          <div className="bg-white p-6 rounded-2xl shadow-md border-2 border-emerald-500 relative transform md:-translate-y-4">
+            <div className="absolute -top-3 -right-3 bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded-full">LE JACKPOT</div>
+            <div className="text-emerald-600 font-bold mb-2">La Longue Traîne</div>
+            <h3 className="text-xl font-black text-slate-900 mb-4">"Avocat divorce amiable garde alternée Lyon 3"</h3>
+            <ul className="text-slate-600 space-y-2 text-sm">
+              <li>✅ 50 recherches/mois</li>
+              <li>✅ Concurrence très faible</li>
+              <li>✅ Intention d'achat immédiate</li>
+              <li>✅ Conversion : 25%</li>
+            </ul>
+          </div>
+        </div>
+
+        <div className="mt-12 bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-8 flex flex-col md:flex-row items-start gap-6 max-w-4xl mx-auto">
+          <div className="text-5xl">🤖</div>
+          <div>
+            <h3 className="text-xl font-bold text-emerald-700 mb-2">L'Astuce ChatGPT : Trouver ses mots-clés</h3>
+            <p className="text-slate-700 mb-3">En panne d'inspiration pour trouver votre "Océan Bleu" ? Demandez à l'I.A. :</p>
+            <code className="block bg-white p-4 rounded-lg text-emerald-600 text-sm border border-emerald-200 font-mono">"Quelles sont les 10 questions les plus fréquentes que se posent les particuliers avant de faire appel à un [Votre Métier] à [Votre Ville] ? Formule-les comme des requêtes Google de longue traîne."</code>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 function SyndromeRestaurant() {
   return (
     <section className="bg-brand-dark text-white py-20 relative overflow-hidden">
@@ -517,6 +617,133 @@ function SyndromeRestaurant() {
         <div className="bg-white text-brand-dark rounded-2xl p-8 mt-12 text-center max-w-3xl mx-auto shadow-xl">
           <h3 className="text-2xl font-black mb-4">Le Déclic</h3>
           <p className="text-xl font-medium text-slate-700 mb-0">"Pour que Google comprenne ce que je vends, je dois lui donner un menu clair et séparé."<br /><br /><span className="text-brand-primary font-bold">1 Page = 1 Expertise (ex: 1 page "Assurance Auto", 1 page "Assurance Décennale")</span></p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function ContenuRoi() {
+  return (
+    <section className="bg-white py-20">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div>
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-brand-primary/10 text-brand-primary">
+            LE CONTENU
+          </div>
+          <h2 className="text-3xl md:text-4xl font-extrabold text-slate-900 mb-6">Que faut-il écrire sur ces pages ?</h2>
+          <p className="text-lg text-slate-600 mb-6">Google est aveugle. Il ne voit pas les belles images, il lit du texte. Si votre page "Assurance Auto" ne contient que 3 lignes et un bouton de contact, Google considérera que vous n'êtes pas un expert.</p>
+          <div className="space-y-4">
+            <div className="flex items-start gap-4">
+              <div className="w-8 h-8 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center font-bold shrink-0 mt-1">1</div>
+              <div>
+                <h4 className="font-bold text-slate-900">La règle des 500 mots</h4>
+                <p className="text-slate-600 text-sm">C'est le minimum syndical pour que Google comprenne le sujet de votre page et vous prenne au sérieux.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-8 h-8 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center font-bold shrink-0 mt-1">2</div>
+              <div>
+                <h4 className="font-bold text-slate-900">Répondez aux questions (FAQ)</h4>
+                <p className="text-slate-600 text-sm">Quelles sont les 5 questions que vos clients vous posent TOUJOURS au téléphone ? Écrivez-les sur votre site avec les réponses. Google adore ça.</p>
+              </div>
+            </div>
+            <div className="flex items-start gap-4">
+              <div className="w-8 h-8 rounded-full bg-brand-primary/10 text-brand-primary flex items-center justify-center font-bold shrink-0 mt-1">3</div>
+              <div>
+                <h4 className="font-bold text-slate-900">Structurez avec des titres</h4>
+                <p className="text-slate-600 text-sm">Utilisez des sous-titres clairs (H2, H3) pour aérer la lecture. Un gros bloc de texte fait fuir les internautes.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div className="bg-emerald-50 p-8 rounded-2xl border border-emerald-200 shadow-sm relative">
+          <div className="absolute -top-6 -right-6 text-6xl">🤖</div>
+          <h3 className="text-xl font-bold text-emerald-800 mb-4">L'Assistant Rédacteur (ChatGPT)</h3>
+          <p className="text-slate-600 mb-4">Ne partez jamais d'une page blanche. Donnez vos informations brutes à l'I.A. et laissez-la structurer la page :</p>
+          <code className="block bg-white p-4 rounded-lg text-emerald-700 text-sm border border-emerald-200 font-mono mb-4">"Rédige une page web de 500 mots pour présenter mon service de [Service]. Inclus des titres H2, un paragraphe sur les avantages, et une FAQ de 3 questions. Voici mes infos : [Prix, spécificités...]"</code>
+          <p className="text-emerald-800 font-medium text-sm">⚠️ Attention : Relisez et modifiez toujours le texte pour qu'il garde votre "patte" humaine !</p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function Backlinks() {
+  return (
+    <section className="bg-brand-dark text-white py-20">
+      <div className="max-w-6xl mx-auto px-6 text-center">
+        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-yellow-400/20 text-yellow-400">
+          LA POPULARITÉ
+        </div>
+        <h2 className="text-3xl md:text-5xl font-extrabold mb-6">Le Bouche-à-Oreille Digital</h2>
+        <p className="text-xl text-slate-300 max-w-3xl mx-auto mb-12">En SEO, on appelle ça les <strong>Backlinks</strong> (liens entrants). C'est le 3ème pilier de l'algorithme de Google.</p>
+        
+        <div className="flex flex-col md:flex-row items-center justify-center gap-8 mb-12">
+          <div className="bg-slate-800 p-6 rounded-xl w-full md:w-1/3 border border-white/10">
+            <div className="text-3xl mb-4">🏢</div>
+            <h4 className="font-bold mb-2">Site A (Mairie)</h4>
+            <p className="text-sm text-slate-400">Fait un lien vers votre site</p>
+          </div>
+          <div className="text-brand-primary text-4xl font-bold hidden md:block">→</div>
+          <div className="text-brand-primary text-4xl font-bold md:hidden">↓</div>
+          <div className="bg-brand-primary/20 border border-brand-primary p-6 rounded-xl w-full md:w-1/3">
+            <div className="text-3xl mb-4">⭐</div>
+            <h4 className="font-bold mb-2">Votre Site</h4>
+            <p className="text-sm text-slate-300">Gagne en "Autorité"</p>
+          </div>
+        </div>
+
+        <div className="bg-white/5 p-8 rounded-2xl text-left max-w-4xl mx-auto border border-white/10">
+          <h3 className="text-2xl font-bold text-yellow-400 mb-4">Comment ça marche ?</h3>
+          <p className="text-slate-300 mb-4">Pour Google, chaque lien qui pointe vers votre site est un <strong>vote de confiance</strong>. Plus le site qui fait le lien est important (une mairie, un journal local, la CCI), plus le vote a du poids.</p>
+          <h4 className="font-bold text-white mt-6 mb-2">Actions faciles pour commencer :</h4>
+          <ul className="list-disc list-inside text-slate-300 space-y-2">
+            <li>S'inscrire sur les annuaires locaux et de votre chambre de commerce.</li>
+            <li>Demander un lien à vos partenaires commerciaux ou fournisseurs.</li>
+            <li>Sponsoriser une association locale (qui mettra votre logo avec un lien sur son site).</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+  );
+}
+
+function MobileFirst() {
+  return (
+    <section className="bg-slate-50 py-20">
+      <div className="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+        <div className="order-2 md:order-1 flex justify-center">
+          <div className="w-64 h-[500px] bg-slate-900 rounded-[3rem] border-[8px] border-slate-800 relative overflow-hidden shadow-2xl">
+            <div className="absolute top-0 inset-x-0 h-6 bg-slate-800 rounded-b-xl w-1/2 mx-auto"></div>
+            <div className="p-4 pt-8 h-full flex flex-col gap-4 bg-white">
+              <div className="w-full h-32 bg-slate-200 rounded-lg animate-pulse"></div>
+              <div className="w-3/4 h-6 bg-slate-200 rounded animate-pulse"></div>
+              <div className="w-full h-4 bg-slate-200 rounded animate-pulse"></div>
+              <div className="w-full h-4 bg-slate-200 rounded animate-pulse"></div>
+              <div className="w-5/6 h-4 bg-slate-200 rounded animate-pulse"></div>
+              <div className="mt-auto w-full h-12 bg-brand-primary rounded-lg animate-pulse"></div>
+            </div>
+          </div>
+        </div>
+        <div className="order-1 md:order-2">
+          <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-purple-600/10 text-purple-600">
+            RÈGLE ABSOLUE
+          </div>
+          <h2 className="text-3xl md:text-5xl font-extrabold text-slate-900 mb-6">Le Juge de Paix : <br/>Le Téléphone</h2>
+          <p className="text-lg text-slate-600 mb-6">Aujourd'hui, <strong>plus de 60% du trafic web</strong> se fait sur smartphone. Pour certains métiers (serrurier, restaurant), c'est plus de 80%.</p>
+          
+          <div className="bg-white p-6 rounded-xl shadow-sm border border-slate-200 mb-6">
+            <h3 className="font-bold text-slate-900 mb-2">L'Indexation "Mobile-First"</h3>
+            <p className="text-slate-600 text-sm mb-0">Depuis quelques années, Google a changé ses règles. Il ne regarde plus la version ordinateur de votre site pour vous classer. <strong>Il regarde UNIQUEMENT la version mobile.</strong></p>
+          </div>
+
+          <ul className="space-y-3 text-slate-700 font-medium">
+            <li className="flex items-center gap-2">❌ Texte trop petit pour être lu</li>
+            <li className="flex items-center gap-2">❌ Boutons trop rapprochés (on clique à côté)</li>
+            <li className="flex items-center gap-2">❌ Site qui déborde sur les côtés</li>
+            <li className="flex items-center gap-2 font-bold text-red-500 mt-2">👉 Sanction immédiate de Google.</li>
+          </ul>
         </div>
       </div>
     </section>
@@ -707,6 +934,15 @@ function GestionMauvaisAvis() {
             </div>
             <p className="text-slate-700 text-sm">"Bonjour, nous sommes navrés d'apprendre votre insatisfaction. La qualité de notre suivi est notre priorité. Nous n'arrivons pas à retrouver votre dossier avec ce pseudonyme. Pouvez-vous nous contacter au 01 XX XX XX XX pour que nous puissions résoudre ce problème immédiatement ? Bien cordialement."</p>
           </div>
+
+          <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-6 flex items-start gap-4 mt-2">
+            <div className="text-3xl">🤖</div>
+            <div>
+              <h4 className="font-bold text-emerald-800 mb-1">L'Astuce Anti-Stress (ChatGPT)</h4>
+              <p className="text-slate-700 text-sm mb-2">Sous le coup de l'émotion, on répond souvent mal. Laissez l'I.A. prendre le relais :</p>
+              <code className="block bg-white p-3 rounded-lg text-emerald-700 text-xs border border-emerald-200 font-mono">"Rédige une réponse très professionnelle, polie et apaisée à cet avis client négatif. Le but est de montrer aux futurs lecteurs que nous sommes à l'écoute. Voici l'avis : [Coller l'avis]"</code>
+            </div>
+          </div>
         </div>
       </div>
     </section>
@@ -756,41 +992,67 @@ function CasConcret() {
       <div className="max-w-6xl mx-auto px-6">
         <div className="text-center mb-16">
           <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-blue-600/10 text-brand-primary border border-blue-600/20">
-            CAS CONCRET RÉEL
+            LA PREUVE PAR L'IMAGE
           </div>
-          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900">Thérapeute de couple — Paris</h2>
+          <h2 className="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4">Ce que ça donne en vrai 📈</h2>
+          <p className="text-lg text-slate-600 max-w-2xl mx-auto">Pas de blabla, voici les résultats réels obtenus récemment en appliquant exactement les méthodes que nous venons de voir.</p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
-          <div className="bg-red-500/10 border border-red-500/30 rounded-2xl p-8 flex flex-col items-start">
-            <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4">AVANT</span>
-            <h4 className="text-2xl font-bold text-red-400">Activité qui démarre. Zéro client. Zéro visibilité.</h4>
+        <div className="grid md:grid-cols-2 gap-8">
+          {/* Cas 1 */}
+          <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col">
+            <h3 className="text-2xl font-bold text-slate-900 mb-1">🧠 Psychologue</h3>
+            <p className="text-slate-500 text-sm mb-6">Trafic généré via le site web (Google Search Console)</p>
+            
+            <div className="flex-grow flex items-center justify-center bg-slate-50 rounded-2xl mb-6 overflow-hidden border border-slate-100">
+              <img src="https://i.postimg.cc/s2TsSFgy/Whats-App-Image-2026-03-20-at-22-37-59.jpg" alt="Stats Psychologue" className="w-full h-auto object-cover" />
+            </div>
+            
+            <div className="flex gap-3 mt-auto">
+              <span className="bg-blue-50 text-blue-700 px-4 py-2 rounded-xl font-bold text-sm">52 Clics qualifiés</span>
+              <span className="bg-emerald-50 text-emerald-700 px-4 py-2 rounded-xl font-bold text-sm">Position moyenne : 6.7</span>
+            </div>
           </div>
-          
-          <div className="bg-emerald-500/10 border border-emerald-500/30 rounded-2xl p-8 flex flex-col items-start">
-            <span className="bg-emerald-500 text-white px-3 py-1 rounded-full text-xs font-bold tracking-wider uppercase mb-4">APRÈS (3 MOIS)</span>
-            <h4 className="text-2xl font-bold text-emerald-400">Première page Google. Clients réguliers.</h4>
+
+          {/* Cas 2 */}
+          <div className="bg-white p-6 rounded-3xl shadow-sm border border-slate-200 flex flex-col">
+            <h3 className="text-2xl font-bold text-slate-900 mb-1">💬 Thérapeute de couple</h3>
+            <p className="text-slate-500 text-sm mb-6">Combinaison Fiche Google + Site Web</p>
+            
+            <div className="flex-grow flex flex-col gap-4 mb-6">
+              <div className="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100">
+                <img src="https://i.postimg.cc/59RyTz1S/Capture-d-ecran-2026-03-20-223005.png" alt="Stats Fiche Google" className="w-full h-auto object-cover" />
+              </div>
+              <div className="bg-slate-50 rounded-2xl overflow-hidden border border-slate-100">
+                <img src="https://i.postimg.cc/pTVybYp5/Capture-d-ecran-2026-03-20-224342.png" alt="Stats Site Web" className="w-full h-auto object-cover" />
+              </div>
+            </div>
+            
+            <div className="flex flex-wrap gap-3 mt-auto">
+              <span className="bg-brand-light text-brand-dark px-4 py-2 rounded-xl font-bold text-sm">502 Interactions Fiche</span>
+              <span className="bg-blue-50 text-blue-700 px-4 py-2 rounded-xl font-bold text-sm">195 Clics Site Web</span>
+            </div>
           </div>
         </div>
+      </div>
+    </section>
+  );
+}
 
-        <div className="bg-gradient-to-br from-brand-primary to-blue-800 rounded-3xl p-8 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8 text-white shadow-xl text-center">
-          <div>
-            <div className="text-5xl md:text-6xl font-black mb-2 leading-none">+8 400</div>
-            <div className="text-sm font-bold uppercase tracking-widest text-white/90">Impressions</div>
-          </div>
-          <div className="md:border-l md:border-r border-white/20">
-            <div className="text-5xl md:text-6xl font-black mb-2 leading-none">502</div>
-            <div className="text-sm font-bold uppercase tracking-widest text-white/90">Interactions Fiche</div>
-          </div>
-          <div>
-            <div className="text-5xl md:text-6xl font-black mb-2 leading-none">Top 10</div>
-            <div className="text-sm font-bold uppercase tracking-widest text-white/90">Position Moyenne</div>
-          </div>
+function QuestionsReponses() {
+  return (
+    <section className="bg-brand-dark text-white py-20 relative overflow-hidden">
+      <div className="absolute rounded-full z-0 pointer-events-none w-[600px] h-[600px] -top-[200px] -right-[200px] bg-[radial-gradient(circle,rgba(0,82,255,0.2)_0%,rgba(11,17,33,0)_70%)]"></div>
+      <div className="max-w-6xl mx-auto px-6 relative z-10 text-center">
+        <div className="inline-flex items-center px-4 py-2 rounded-full text-sm font-bold tracking-wider uppercase mb-6 bg-blue-600/20 text-brand-primary">
+          ÉCHANGEONS
         </div>
-
-        <div className="bg-blue-600/5 border-2 border-dashed border-brand-primary rounded-2xl p-8 mt-12 text-center max-w-3xl mx-auto">
-          <h3 className="text-xl font-extrabold text-brand-primary mb-2">🎤 Témoignage</h3>
-          <p className="text-lg text-slate-800 mb-0">Notre invitée est dans la salle ce soir pour vous partager son expérience !</p>
+        <h2 className="text-4xl md:text-6xl font-extrabold mb-8">C'est à vous !</h2>
+        <p className="text-xl text-slate-300 max-w-2xl mx-auto mb-12">
+          Vous avez des questions sur votre site actuel ? Sur votre fiche Google ? Ou sur une stratégie spécifique à votre métier ?
+        </p>
+        <div className="text-8xl animate-bounce">
+          🙋‍♀️🙋‍♂️
         </div>
       </div>
     </section>
@@ -864,23 +1126,29 @@ export default function App() {
     <div className="min-h-screen bg-white">
       <ProgressBar />
       <Hero />
-      <IdeesRecues />
       <TourDeTable />
+      <InstagramVsGoogle />
+      <IdeesRecues />
       <DefinitionSEO />
       <CeQueVeutGoogle />
-      <InstagramVsGoogle />
+      <SEOLocal />
       <Programme />
       <Levier1 />
       <ModeExpert />
       <ErreurFicheAbandonnee />
       <StrategieSEO />
+      <LongueTraine />
       <SyndromeRestaurant />
-      <Regle3Secondes />
-      <ConversionDesign />
+      <ContenuRoi />
+      <Backlinks />
       <Levier3 />
       <GestionMauvaisAvis />
+      <MobileFirst />
+      <Regle3Secondes />
+      <ConversionDesign />
       <Levier5 />
       <CasConcret />
+      <QuestionsReponses />
       <Conclusion />
       <Footer />
     </div>
